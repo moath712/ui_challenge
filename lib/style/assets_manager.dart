@@ -78,6 +78,14 @@ class ImageAssets {
   static const String menu5 = "assets/images/menu5.png";
   static const String menu6 = "assets/images/menu6.png";
   static const String cart2 = "assets/images/cart2.png";
+  static const String one = "assets/images/one.png";
+  static const String two = "assets/images/two.png";
+  static const String three = "assets/images/three.png";
+  static const String four = "assets/images/four.png";
+  static const String six = "assets/images/six.png";
+  static const String eight = "assets/images/eight.png";
+  static const String nine = "assets/images/nine.png";
+  static const String ten = "assets/images/ten.png";
 }
 
 class SvgAssets {}

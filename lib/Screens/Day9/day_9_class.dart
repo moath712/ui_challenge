@@ -22,13 +22,13 @@ class ItemList {
         imageUrl: ImageAssets.menu5,
         priceUsd: 2,
         ratecount: 490,
-        count: 3),
+        count: 5),
     Item(
         name: 'Pocky',
         imageUrl: ImageAssets.menu6,
         priceUsd: 3,
         ratecount: 300,
-        count: 1),
+        count: 4),
     Item(
         name: 'Kit Kat',
         imageUrl: ImageAssets.menu5,
@@ -46,19 +46,19 @@ class ItemList {
         imageUrl: ImageAssets.menu5,
         priceUsd: 2,
         ratecount: 490,
-        count: 1),
+        count: 5),
     Item(
         name: 'Kit Kat',
         imageUrl: ImageAssets.menu5,
         priceUsd: 2,
         ratecount: 490,
-        count: 3),
+        count: 4),
     Item(
         name: 'Pocky',
         imageUrl: ImageAssets.menu6,
         priceUsd: 3,
         ratecount: 300,
-        count: 1),
+        count: 4),
     Item(
         name: 'Kit Kat',
         imageUrl: ImageAssets.menu5,
@@ -76,7 +76,7 @@ class ItemList {
         imageUrl: ImageAssets.menu5,
         priceUsd: 2,
         ratecount: 490,
-        count: 1),
+        count: 5),
   ];
 
   List<Item> get items => _items;

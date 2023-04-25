@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ui_challenge/Screens/Day4/widgets/events_list.dart';
 import 'package:ui_challenge/Screens/Day4/widgets/profile_bio.dart';
+import 'package:ui_challenge/Screens/home_screen.dart';
 import 'package:ui_challenge/style/assets_manager.dart';
 import 'package:ui_challenge/style/colors.dart';
 
@@ -54,7 +55,12 @@ class Day4 extends StatelessWidget {
               left: 28.0,
               child: FloatingActionButton(
                 backgroundColor: Colors.white,
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomeScreen()),
+                  );
+                },
                 child:
                     Image.asset(ImageAssets.arrow, height: 24.0, width: 24.0),
               ),

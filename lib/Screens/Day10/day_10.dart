@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ui_challenge/Screens/Day10/day_10_class.dart';
 import 'package:ui_challenge/Screens/Day10/widgets/cart_bar.dart';
 import 'package:ui_challenge/Screens/Day10/widgets/price_bar.dart';
+import 'package:ui_challenge/Screens/home_screen.dart';
 import 'package:ui_challenge/style/assets_manager.dart';
 import 'package:ui_challenge/style/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -39,10 +40,17 @@ class _CartPageState extends State<CartPage> {
           const SizedBox(
             height: 60,
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: InkWell(
-              child: Image.asset(ImageAssets.arrowcart),
+          InkWell(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => HomeScreen()),
+              );
+            },
+            child: Image.asset(
+              ImageAssets.arrowcart,
+              width: 50,
+              height: 50,
             ),
           ),
           const CartBar(),
@@ -95,18 +103,21 @@ class _CartPageState extends State<CartPage> {
                               fontWeight: FontWeight.w800,
                               color: AppColors.cartpink),
                         ),
-                        Row(
-                          children: [
-                            Image.asset(ImageAssets.star2),
-                            const SizedBox(
-                              width: 2,
-                            ),
-                            Image.asset(ImageAssets.star2),
-                            const SizedBox(
-                              width: 2,
-                            ),
-                            Image.asset(ImageAssets.star2),
-                          ],
+                        SizedBox(
+                          height: 20,
+                          width: 60,
+                          child: ListView.builder(
+                            itemCount: item.starCount,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (BuildContext context, int index) {
+                              return Row(
+                                children: [
+                                  Image.asset(ImageAssets.star2),
+                                  const SizedBox(width: 2),
+                                ],
+                              );
+                            },
+                          ),
                         ),
                         Text(
                           "\$${item.priceUsd.toStringAsFixed(1)}",

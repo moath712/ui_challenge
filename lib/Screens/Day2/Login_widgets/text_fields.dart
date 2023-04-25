@@ -25,14 +25,19 @@ class TextFields extends StatelessWidget {
           style: TextStyle(
               color: Colors.black, fontSize: 18, fontWeight: FontWeight.w300),
           decoration: InputDecoration(
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: AppColors.lightwhite,
+              ), //<-- SEE HERE
+            ),
             focusedBorder: OutlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.green,
+                color: AppColors.lightwhite,
               ),
             ),
             border: OutlineInputBorder(
               borderSide: BorderSide(
-                color: Colors.green,
+                color: AppColors.lightwhite,
               ),
             ),
             prefixIcon: ImageIcon(
@@ -53,7 +58,21 @@ class TextFields extends StatelessWidget {
           obscureText: true,
           obscuringCharacter: '*',
           decoration: InputDecoration(
-            border: OutlineInputBorder(),
+            enabledBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: AppColors.lightwhite,
+              ), //<-- SEE HERE
+            ),
+            focusedBorder: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: AppColors.lightwhite,
+              ),
+            ),
+            border: OutlineInputBorder(
+              borderSide: BorderSide(
+                color: AppColors.lightwhite,
+              ),
+            ),
             prefixIcon: ImageIcon(
               color: AppColors.keymail,
               AssetImage(ImageAssets.password),
