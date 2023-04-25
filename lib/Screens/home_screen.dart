@@ -7,7 +7,6 @@ import 'package:ui_challenge/screens/Day10/day_10.dart';
 import 'package:ui_challenge/screens/Day2/day_2_home.dart';
 import 'package:ui_challenge/screens/day7/day_7_screen.dart';
 import 'package:ui_challenge/Screens/day1/day_1_screen.dart';
-
 import 'package:ui_challenge/style/assets_manager.dart';
 
 class ButtonsData {
