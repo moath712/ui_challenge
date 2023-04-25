@@ -1,11 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/screens/day1/widgets/code_view.dart';
-import 'package:ui_challenge/screens/day1/widgets/collect_view.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_challenge/screens/day1/widgets/get_started_btn.dart';
-import 'package:ui_challenge/screens/day1/widgets/learn_view.dart';
+import 'package:ui_challenge/screens/day1/widgets/page_view_class.dart';
 import 'package:ui_challenge/style/assets_manager.dart';
 import 'package:ui_challenge/style/colors.dart';
-
 import 'widgets/pagenation_bar.dart';
 
 class SwipePageView extends StatefulWidget {
@@ -60,19 +58,7 @@ class _SwipePageViewState extends State<SwipePageView> {
         body: Stack(children: <Widget>[
           _currentimageColor,
           GetStartedButton(currentButtonColor: _currentButtonColor),
-          PageView(
-            controller: _pageController,
-            onPageChanged: (index) {
-              setState(() {
-                _currentIndex = index;
-              });
-            },
-            children: const <Widget>[
-              LearnWidget(),
-              CodeWidget(),
-              CollectWidget(),
-            ],
-          ),
+          PagesViews(),
           Positioned(
             left: 0,
             right: 0,
@@ -84,5 +70,46 @@ class _SwipePageViewState extends State<SwipePageView> {
             ),
           ),
         ]));
+  }
+
+  PageView PagesViews() {
+    return PageView(
+          controller: _pageController,
+          onPageChanged: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          },
+          children: List.generate(
+            dataList.length,
+            (index) => Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Image.asset(dataList[index].image),
+                const SizedBox(height: 60),
+                Text(dataList[index].title,
+                    style: GoogleFonts.roboto(
+                        fontSize: 36.0,
+                        color: AppColors.dayone,
+                        fontWeight: FontWeight.w700)),
+                const SizedBox(height: 20),
+                Center(
+                  child: Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Text(
+                      dataList[index].texts,
+                      softWrap: true,
+                      textAlign: TextAlign.center,
+                      style: const TextStyle(
+                          fontSize: 18.0,
+                          color: AppColors.dayone,
+                          fontWeight: FontWeight.w400),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        );
   }
 }
