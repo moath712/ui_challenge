@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day1/pagenation_bar.dart';
-
-import 'package:ui_challenge/Screens/Day1/widgets/code_view.dart';
-import 'package:ui_challenge/Screens/Day1/widgets/collect_view.dart';
-import 'package:ui_challenge/Screens/Day1/widgets/get_started_btn.dart';
-import 'package:ui_challenge/Screens/Day1/widgets/learn_view.dart';
+import 'package:ui_challenge/screens/day1/widgets/code_view.dart';
+import 'package:ui_challenge/screens/day1/widgets/collect_view.dart';
+import 'package:ui_challenge/screens/day1/widgets/get_started_btn.dart';
+import 'package:ui_challenge/screens/day1/widgets/learn_view.dart';
 import 'package:ui_challenge/style/assets_manager.dart';
 import 'package:ui_challenge/style/colors.dart';
+
+import 'widgets/pagenation_bar.dart';
 
 class SwipePageView extends StatefulWidget {
   const SwipePageView({super.key});
 
   @override
-  _SwipePageViewState createState() => _SwipePageViewState();
+  State<SwipePageView> createState() => _SwipePageViewState();
 }
 
 class _SwipePageViewState extends State<SwipePageView> {
@@ -28,6 +28,7 @@ class _SwipePageViewState extends State<SwipePageView> {
     Positioned(bottom: 0, child: Image.asset(ImageAssets.blue2)),
     Positioned(bottom: 0, right: 0, child: Image.asset(ImageAssets.pink2)),
   ];
+
   Color _currentButtonColor = AppColors.greenColor;
   dynamic _currentimageColor =
       Positioned(bottom: 0, left: 0, child: Image.asset(ImageAssets.yellow2));
@@ -76,7 +77,7 @@ class _SwipePageViewState extends State<SwipePageView> {
             left: 0,
             right: 0,
             bottom: 100,
-            child: PageIndicator(
+            child: PagenationBar(
               pageCount: 3,
               currentIndex: _currentIndex,
               pageController: _pageController,

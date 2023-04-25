@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day4/widgets/events_list.dart';
-import 'package:ui_challenge/Screens/Day4/widgets/profile_bio.dart';
 import 'package:ui_challenge/Screens/home_screen.dart';
+
+import 'package:ui_challenge/screens/Day4/widgets/profile_bio.dart';
+import 'package:ui_challenge/screens/day4/widgets/events_list.dart';
 import 'package:ui_challenge/style/assets_manager.dart';
 import 'package:ui_challenge/style/colors.dart';
 
@@ -37,7 +38,7 @@ class Day4 extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const ProfileBio(),
-                    EventsList(),
+                    eventslist(),
                   ],
                 ),
               ),

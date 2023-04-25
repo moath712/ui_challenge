@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 
-class PageIndicator extends StatefulWidget {
+class PagenationBar extends StatefulWidget {
   final int pageCount;
   final int currentIndex;
   final PageController pageController;
 
-  const PageIndicator(
+  const PagenationBar(
       {super.key,
       required this.pageCount,
       required this.currentIndex,
       required this.pageController});
 
   @override
-  _PageIndicatorState createState() => _PageIndicatorState();
+  State<PagenationBar> createState() => _PagenationBarState();
 }
 
-class _PageIndicatorState extends State<PageIndicator>
+class _PagenationBarState extends State<PagenationBar>
     with SingleTickerProviderStateMixin {
   late AnimationController _controller;
   late Animation<double> _scaleAnimation;

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day6/widgets/horizental_articles.dart';
-import 'package:ui_challenge/Screens/Day6/widgets/last_articles.dart';
-import 'package:ui_challenge/Screens/Day6/widgets/models_art.dart';
-import 'package:ui_challenge/Screens/Day6/widgets/top_bar.dart';
+import 'package:ui_challenge/screens/Day6/widgets/horizental_articles.dart';
+import 'package:ui_challenge/screens/Day6/widgets/last_articles.dart';
+import 'package:ui_challenge/screens/Day6/widgets/models_art.dart';
+import 'package:ui_challenge/screens/Day6/widgets/top_bar.dart';
 
 class CardData {
   final String title;

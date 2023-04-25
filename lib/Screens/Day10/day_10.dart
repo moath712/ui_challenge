@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day10/day_10_class.dart';
-import 'package:ui_challenge/Screens/Day10/widgets/cart_bar.dart';
-import 'package:ui_challenge/Screens/Day10/widgets/price_bar.dart';
 import 'package:ui_challenge/Screens/home_screen.dart';
+import 'package:ui_challenge/screens/Day10/day_10_class.dart';
+import 'package:ui_challenge/screens/Day10/widgets/cart_bar.dart';
+import 'package:ui_challenge/screens/Day10/widgets/price_bar.dart';
+
 import 'package:ui_challenge/style/assets_manager.dart';
 import 'package:ui_challenge/style/colors.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class CartPage extends StatefulWidget {
-  const CartPage({super.key});
+class DayTen extends StatefulWidget {
+  const DayTen({super.key});
 
   @override
-  _CartPageState createState() => _CartPageState();
+  State<DayTen> createState() => _DayTenState();
 }
 
-class _CartPageState extends State<CartPage> {
+class _DayTenState extends State<DayTen> {
   void _incrementItem(CartItem item) {
     setState(() {
       item.quantity++;
@@ -54,14 +55,14 @@ class _CartPageState extends State<CartPage> {
             ),
           ),
           const CartBar(),
-          ItemsList(),
+          itemslist(),
           pricebar(),
         ],
       ),
     );
   }
 
-  Expanded ItemsList() {
+  Expanded itemslist() {
     return Expanded(
       child: ListView.builder(
         padding: EdgeInsets.zero,

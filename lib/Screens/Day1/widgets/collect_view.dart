@@ -28,7 +28,7 @@ class CollectWidget extends StatelessWidget {
                     const SizedBox(height: 60),
 
                     Image.asset(
-                        ImageAssets.card2), // replace with your image path
+                        ImageAssets.card2), 
                     const SizedBox(height: 5),
                     Image.asset(ImageAssets.card1),
                   ],

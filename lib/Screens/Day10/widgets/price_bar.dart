@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui_challenge/Screens/Day10/day_10_class.dart';
+import 'package:ui_challenge/screens/Day10/day_10_class.dart';
 import 'package:ui_challenge/style/assets_manager.dart';
 import 'package:ui_challenge/style/colors.dart';
 
@@ -63,8 +63,8 @@ SizedBox pricebar() {
                             'CHECKOUT',
                             textAlign: TextAlign.left,
                             style: GoogleFonts.openSans(
-                              fontWeight: FontWeight.w600,
-                              fontSize: 18,
+                              fontWeight: FontWeight.w800,
+                              fontSize: 16,
                               letterSpacing: 0.0,
                               color: Colors.white,
                             ),
@@ -77,7 +77,8 @@ SizedBox pricebar() {
                 Padding(
                   padding: const EdgeInsets.all(22.0),
                   child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Text(
                         "TOTAL",

@@ -16,9 +16,9 @@ class LearnWidget extends StatelessWidget {
         Stack(
           children: [
             Positioned(
-                right: 180, top: 80, child: Image.asset(ImageAssets.yellow)),
+                right: 180, top: 60, child: Image.asset(ImageAssets.yellow)),
             Padding(
-              padding: const EdgeInsets.all(40.0),
+              padding: const EdgeInsets.all(30.0),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -30,13 +30,13 @@ class LearnWidget extends StatelessWidget {
             ),
           ],
         ),
-        const SizedBox(height: 25),
+        const SizedBox(height: 60),
         Text('Learn',
             style: GoogleFonts.roboto(
                 fontSize: 36.0,
                 color: AppColors.dayone,
                 fontWeight: FontWeight.w700)),
-        const SizedBox(height: 8),
+        const SizedBox(height: 20),
         const Center(
           child: Padding(
             padding: EdgeInsets.all(8.0),

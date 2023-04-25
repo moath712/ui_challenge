@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day6/day_6_class.dart';
+import 'package:ui_challenge/screens/Day6/day_6_class.dart';
 import 'package:ui_challenge/style/assets_manager.dart';
 import 'package:ui_challenge/style/colors.dart';
 

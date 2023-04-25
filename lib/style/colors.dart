@@ -22,7 +22,7 @@ class AppColors {
   static const Color day6color = Color(0xFF452E4F);
   static const Color applefield = Color(0xFFD8D8D8);
   static const Color appletextfield = Color(0xFF2E3249);
-  static const Color appleicons = Color(0xFFD99E6FC);
+  static const Color appleicons = Color(0xFFD9E6FC);
   static const Color applesocial = Color(0xFF7077A0);
   static const Color orange22 = Color(0xFFFA6B74);
   static const Color lightwhite = Color(0xFFECECEC);

@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day10/day_10.dart';
-import 'package:ui_challenge/Screens/Day2/day_2_home.dart';
-import 'package:ui_challenge/Screens/Day1/day_1.dart';
-import 'package:ui_challenge/Screens/Day3/day_3.dart';
-import 'package:ui_challenge/Screens/Day4/day_4.dart';
-import 'package:ui_challenge/Screens/Day6/day_6.dart';
-import 'package:ui_challenge/Screens/Day7/day_7.dart';
-import 'package:ui_challenge/Screens/Day9/day_9.dart';
+import 'package:ui_challenge/screens/day3/day_3_screen.dart';
+import 'package:ui_challenge/Screens/day4/day_4_screen.dart';
+import 'package:ui_challenge/screens/day6/day_6_screen.dart';
+import 'package:ui_challenge/screens/day9/day_9_screen.dart';
+import 'package:ui_challenge/screens/Day1/day_1_screen.dart';
+import 'package:ui_challenge/screens/Day10/day_10.dart';
+import 'package:ui_challenge/screens/Day2/day_2_home.dart';
+import 'package:ui_challenge/screens/day7/day_7_screen.dart';
+
 import 'package:ui_challenge/style/assets_manager.dart';
 
 class ButtonsData {
@@ -18,7 +19,7 @@ class ButtonsData {
 }
 
 class HomeScreen extends StatelessWidget {
-  List<ButtonsData> dataList = [
+  final List<ButtonsData> dataList = [
     ButtonsData(
       name: 'Day 1',
       route: const SwipePageView(),
@@ -46,7 +47,7 @@ class HomeScreen extends StatelessWidget {
     ),
     ButtonsData(
       name: 'Day 8',
-      route: Day7(
+      route: const Day7(
         percentage: 50,
       ),
       image: ImageAssets.eight,
@@ -58,7 +59,7 @@ class HomeScreen extends StatelessWidget {
     ),
     ButtonsData(
       name: 'Day 10',
-      route: const CartPage(),
+      route: const DayTen(),
       image: ImageAssets.ten,
     ),
   ];
@@ -96,7 +97,7 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Text(
                       button.name,
-                      style: TextStyle(fontSize: 20, color: Colors.black),
+                      style: const TextStyle(fontSize: 20, color: Colors.black),
                     ),
                   ],
                 ),

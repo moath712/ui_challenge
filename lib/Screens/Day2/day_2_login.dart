@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day2/Login_widgets/back_button.dart';
-import 'package:ui_challenge/Screens/Day2/Login_widgets/lemon_backg.dart';
-import 'package:ui_challenge/Screens/Day2/Login_widgets/login_btn2.dart';
-import 'package:ui_challenge/Screens/Day2/Login_widgets/text_fields.dart';
-import 'package:ui_challenge/Screens/Day2/Login_widgets/white_draw.dart';
+import 'package:ui_challenge/screens/Day2/Login_widgets/back_button.dart';
+import 'package:ui_challenge/screens/Day2/Login_widgets/lemon_backg.dart';
+import 'package:ui_challenge/screens/Day2/Login_widgets/login_btn2.dart';
+import 'package:ui_challenge/screens/Day2/Login_widgets/text_fields.dart';
+import 'package:ui_challenge/screens/Day2/Login_widgets/white_draw.dart';
 
 class MyLoginPage extends StatelessWidget {
   const MyLoginPage({super.key});

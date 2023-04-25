@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day7/widgets/charts_draw.dart';
-import 'package:ui_challenge/Screens/Day7/widgets/circular_bar.dart';
-import 'package:ui_challenge/Screens/Day7/widgets/key_metrics_bar.dart';
-import 'package:ui_challenge/Screens/Day7/widgets/key_metrics_cards.dart';
-import 'package:ui_challenge/Screens/Day7/widgets/page_bar_chart.dart';
+import 'package:ui_challenge/screens/Day7/widgets/charts_draw.dart';
+import 'package:ui_challenge/screens/Day7/widgets/circular_bar.dart';
+import 'package:ui_challenge/screens/Day7/widgets/key_metrics_bar.dart';
+import 'package:ui_challenge/screens/Day7/widgets/key_metrics_cards.dart';
+import 'package:ui_challenge/screens/Day7/widgets/page_bar_chart.dart';
 import 'package:ui_challenge/style/assets_manager.dart';
 
 class Day7 extends StatelessWidget {
-  Day7({super.key, required this.percentage});
-  double percentage;
+  const Day7({super.key, required this.percentage});
+  final double percentage;
 
   @override
   Widget build(BuildContext context) {

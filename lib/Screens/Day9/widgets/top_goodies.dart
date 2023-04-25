@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui_challenge/Screens/Day9/day_9_class.dart';
+import 'package:ui_challenge/screens/Day9/day_9_class.dart';
 import 'package:ui_challenge/style/colors.dart';
 
 class TopGoodiesList extends StatelessWidget {

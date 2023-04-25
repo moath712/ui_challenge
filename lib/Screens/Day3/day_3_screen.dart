@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day3/widgets/email_field.dart';
-import 'package:ui_challenge/Screens/Day3/widgets/follow_us_bar.dart';
-import 'package:ui_challenge/Screens/Day3/widgets/login_apple.dart';
-import 'package:ui_challenge/Screens/Day3/widgets/name_field.dart';
-import 'package:ui_challenge/Screens/Day3/widgets/upper_content.dart';
+import 'package:ui_challenge/screens/Day3/widgets/email_field.dart';
+import 'package:ui_challenge/screens/Day3/widgets/follow_us_bar.dart';
+import 'package:ui_challenge/screens/Day3/widgets/login_apple.dart';
+import 'package:ui_challenge/screens/Day3/widgets/name_field.dart';
+import 'package:ui_challenge/screens/Day3/widgets/upper_content.dart';
 import 'package:ui_challenge/style/assets_manager.dart';
 import 'package:ui_challenge/style/colors.dart';
 
@@ -11,7 +11,7 @@ class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 
   @override
-  _SignUpScreenState createState() => _SignUpScreenState();
+  State<SignUpScreen> createState() => _SignUpScreenState();
 }
 
 class _SignUpScreenState extends State<SignUpScreen> {

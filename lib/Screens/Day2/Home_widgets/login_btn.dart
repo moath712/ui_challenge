@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day2/day_2_login.dart';
+import 'package:ui_challenge/screens/Day2/day_2_login.dart';
 import 'package:ui_challenge/style/colors.dart';
 
 class LoginButton extends StatelessWidget {

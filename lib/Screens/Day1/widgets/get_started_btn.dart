@@ -22,7 +22,7 @@ class GetStartedButton extends StatelessWidget {
           child: ElevatedButton(
             onPressed: () {},
             style: ElevatedButton.styleFrom(
-              backgroundColor: _currentButtonColor, // Background color
+              backgroundColor: _currentButtonColor, 
             ),
             child: Text(
               'GET STARTED',

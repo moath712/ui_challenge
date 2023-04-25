@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
-import 'package:ui_challenge/Screens/Day7/day_7_class.dart';
+import 'package:ui_challenge/screens/Day7/day_7_class.dart';
 
 class ChartsDraw extends StatelessWidget {
   const ChartsDraw({

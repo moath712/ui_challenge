@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:ui_challenge/Screens/Day4/class.dart';
+import 'package:ui_challenge/screens/Day4/class.dart';
 import 'package:ui_challenge/style/colors.dart';
 
-Container EventsList() {
+Container eventslist() {
   return Container(
     color: Colors.white,
     child: SizedBox(

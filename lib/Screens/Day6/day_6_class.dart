@@ -1,4 +1,5 @@
-import 'package:ui_challenge/Screens/Day6/day_6.dart';
+import 'package:ui_challenge/Screens/day6/day_6_screen.dart';
+
 import 'package:ui_challenge/style/assets_manager.dart';
 
 final List<CardData> horizontalCards = [

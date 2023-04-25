@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:ui_challenge/Screens/Day7/day_7_class.dart';
+import 'package:ui_challenge/screens/Day7/day_7_class.dart';
 import 'package:ui_challenge/style/colors.dart';
 
 class KeyMetricsCards extends StatelessWidget {
