@@ -1,6 +1,5 @@
 import 'package:ui_challenge/style/assets_manager.dart';
-
-import '../day1/day_1_screen.dart';
+import 'package:ui_challenge/Screens/day1/day_1_screen.dart';
 
 final List<SalesData> chartData = [
   SalesData(DateTime(2010), 40),
