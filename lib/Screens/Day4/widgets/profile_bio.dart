@@ -57,7 +57,7 @@ class ProfileBio extends StatelessWidget {
           height: 20,
         ),
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Text(
             "About you",
             style: TextStyle(
@@ -70,7 +70,7 @@ class ProfileBio extends StatelessWidget {
           height: 20,
         ),
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Text(
             "Laura Pergolizzi is known professionally as LP, is\n an American singer and songwriter, best known\n for her single Lost on You.",
             style: TextStyle(
@@ -83,7 +83,7 @@ class ProfileBio extends StatelessWidget {
           height: 20,
         ),
         const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 8),
+          padding: EdgeInsets.symmetric(horizontal: 20),
           child: Text(
             "Upcoming events",
             style: TextStyle(

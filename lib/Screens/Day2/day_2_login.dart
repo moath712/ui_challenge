@@ -4,9 +4,6 @@ import 'package:ui_challenge/Screens/Day2/Login_widgets/lemon_backg.dart';
 import 'package:ui_challenge/Screens/Day2/Login_widgets/login_btn2.dart';
 import 'package:ui_challenge/Screens/Day2/Login_widgets/text_fields.dart';
 import 'package:ui_challenge/Screens/Day2/Login_widgets/white_draw.dart';
-import 'package:ui_challenge/Screens/Day2/day_2_home.dart';
-import 'package:ui_challenge/style/assets_manager.dart';
-import 'package:ui_challenge/style/colors.dart';
 
 class MyLoginPage extends StatelessWidget {
   const MyLoginPage({super.key});

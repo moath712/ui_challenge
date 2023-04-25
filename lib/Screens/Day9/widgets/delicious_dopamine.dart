@@ -75,15 +75,22 @@ class DeliciousDopamineList extends StatelessWidget {
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        Image.asset(ImageAssets.star2),
-                        const SizedBox(
-                          width: 2,
+                        SizedBox(
+                          height: 20,
+                          width: 50,
+                          child: ListView.builder(
+                            itemCount: _items[index].count,
+                            scrollDirection: Axis.horizontal,
+                            itemBuilder: (BuildContext context, int index) {
+                              return Row(
+                                children: [
+                                  Image.asset(ImageAssets.star2),
+                                  const SizedBox(width: 2),
+                                ],
+                              );
+                            },
+                          ),
                         ),
-                        Image.asset(ImageAssets.star2),
-                        const SizedBox(
-                          width: 2,
-                        ),
-                        Image.asset(ImageAssets.star2),
                         Text(
                           " (${_items[index].ratecount.toStringAsFixed(0)})",
                           style: GoogleFonts.openSans(

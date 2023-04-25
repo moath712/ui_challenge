@@ -35,7 +35,7 @@ class HomeScreen extends StatelessWidget {
     ),
     ButtonsData(
       name: 'Day 6',
-      route: Day6(),
+      route: const Day6(),
     ),
     ButtonsData(
       name: 'Day 8',

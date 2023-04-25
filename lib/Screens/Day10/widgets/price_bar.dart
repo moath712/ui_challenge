@@ -12,7 +12,7 @@ double _calculateTotal() {
   return total;
 }
 
-SizedBox PriceBar() {
+SizedBox pricebar() {
   return SizedBox(
     height: 200,
     child: Stack(

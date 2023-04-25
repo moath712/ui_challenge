@@ -32,6 +32,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
               const EmailField(),
               const SizedBox(height: 12),
               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const Padding(
                     padding: EdgeInsets.symmetric(vertical: 0, horizontal: 8),

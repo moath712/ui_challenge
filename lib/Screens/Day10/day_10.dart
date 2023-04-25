@@ -47,7 +47,7 @@ class _CartPageState extends State<CartPage> {
           ),
           const CartBar(),
           ItemsList(),
-          PriceBar(),
+          pricebar(),
         ],
       ),
     );

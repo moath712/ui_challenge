@@ -49,6 +49,16 @@ class Day4 extends StatelessWidget {
                 ImageAssets.profile,
               ),
             ),
+            Positioned(
+              top: 60.0,
+              left: 28.0,
+              child: FloatingActionButton(
+                backgroundColor: Colors.white,
+                onPressed: () {},
+                child:
+                    Image.asset(ImageAssets.arrow, height: 24.0, width: 24.0),
+              ),
+            ),
           ],
         ),
       ),

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ui_challenge/Screens/Day1/pagenation_bar.dart';
 
-import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_challenge/Screens/Day1/widgets/code_view.dart';
 import 'package:ui_challenge/Screens/Day1/widgets/collect_view.dart';
 import 'package:ui_challenge/Screens/Day1/widgets/get_started_btn.dart';

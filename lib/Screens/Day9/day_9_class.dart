@@ -5,11 +5,13 @@ class Item {
   final String imageUrl;
   final int priceUsd;
   final int ratecount;
+  final int count;
 
   Item(
       {required this.name,
       required this.ratecount,
       required this.priceUsd,
+      required this.count,
       required this.imageUrl});
 }
 
@@ -19,52 +21,62 @@ class ItemList {
         name: 'Kit Kat',
         imageUrl: ImageAssets.menu5,
         priceUsd: 2,
-        ratecount: 490),
+        ratecount: 490,
+        count: 3),
     Item(
         name: 'Pocky',
         imageUrl: ImageAssets.menu6,
         priceUsd: 3,
-        ratecount: 300),
+        ratecount: 300,
+        count: 1),
     Item(
         name: 'Kit Kat',
         imageUrl: ImageAssets.menu5,
         priceUsd: 2,
-        ratecount: 490),
+        ratecount: 490,
+        count: 5),
     Item(
         name: 'Pocky',
         imageUrl: ImageAssets.menu6,
         priceUsd: 3,
-        ratecount: 300),
+        ratecount: 300,
+        count: 4),
     Item(
         name: 'Kit Kat',
         imageUrl: ImageAssets.menu5,
         priceUsd: 2,
-        ratecount: 490),
-    Item(
-        name: 'Pocky',
-        imageUrl: ImageAssets.menu6,
-        priceUsd: 3,
-        ratecount: 300),
+        ratecount: 490,
+        count: 1),
     Item(
         name: 'Kit Kat',
         imageUrl: ImageAssets.menu5,
         priceUsd: 2,
-        ratecount: 490),
+        ratecount: 490,
+        count: 3),
     Item(
         name: 'Pocky',
         imageUrl: ImageAssets.menu6,
         priceUsd: 3,
-        ratecount: 300),
+        ratecount: 300,
+        count: 1),
     Item(
         name: 'Kit Kat',
         imageUrl: ImageAssets.menu5,
         priceUsd: 2,
-        ratecount: 490),
+        ratecount: 490,
+        count: 5),
     Item(
         name: 'Pocky',
         imageUrl: ImageAssets.menu6,
         priceUsd: 3,
-        ratecount: 300),
+        ratecount: 300,
+        count: 4),
+    Item(
+        name: 'Kit Kat',
+        imageUrl: ImageAssets.menu5,
+        priceUsd: 2,
+        ratecount: 490,
+        count: 1),
   ];
 
   List<Item> get items => _items;
