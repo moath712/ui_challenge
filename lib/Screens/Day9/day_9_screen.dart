@@ -6,7 +6,6 @@ import 'package:ui_challenge/screens/Day9/widgets/search_bar.dart';
 import 'package:ui_challenge/screens/Day9/widgets/title_seeall.dart';
 import 'package:ui_challenge/screens/Day9/widgets/title_seeall2.dart';
 import 'package:ui_challenge/screens/Day9/widgets/top_goodies.dart';
-
 import 'package:ui_challenge/style/assets_manager.dart';
 
 class Day9 extends StatefulWidget {

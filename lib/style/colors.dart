@@ -28,4 +28,7 @@ class AppColors {
   static const Color lightwhite = Color(0xFFECECEC);
   static const Color white22 = Color(0xFFFFFFFF);
   static const Color darkblue = Color(0xFF4F3A57);
+  static const Color twitterbox = Color(0xFFACF8FF);
+  static const Color callbox = Color(0xFFFCE2B6);
+  static const Color inboxbox = Color(0xFFD3C7C7);
 }

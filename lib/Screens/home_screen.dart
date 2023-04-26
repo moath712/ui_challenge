@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:ui_challenge/screens/day3/day_3_screen.dart';
 import 'package:ui_challenge/Screens/day4/day_4_screen.dart';
 import 'package:ui_challenge/screens/day6/day_6_screen.dart';
@@ -70,17 +71,24 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        elevation: 0,
       ),
       body: GridView.count(
         crossAxisCount: 2,
-        crossAxisSpacing: 10.0,
-        mainAxisSpacing: 10.0,
+        crossAxisSpacing: 30.0,
+        mainAxisSpacing: 30.0,
         padding: const EdgeInsets.all(10.0),
         children: List.generate(dataList.length, (index) {
           final button = dataList[index];
           return Container(
-            decoration: BoxDecoration(
-                color: Colors.black, borderRadius: BorderRadius.circular(5)),
+            decoration: BoxDecoration(boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withOpacity(0.5),
+                spreadRadius: 2,
+                blurRadius: 5,
+                offset: const Offset(0, 3),
+              ),
+            ], color: Colors.black, borderRadius: BorderRadius.circular(5)),
             child: GestureDetector(
               onTap: () {
                 Navigator.push(
@@ -96,7 +104,11 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Text(
                       button.name,
-                      style: const TextStyle(fontSize: 20, color: Colors.black),
+                      style: GoogleFonts.openSans(
+                        fontSize: 20,
+                        fontWeight: FontWeight.w800,
+                        color: Colors.black,
+                      ),
                     ),
                   ],
                 ),

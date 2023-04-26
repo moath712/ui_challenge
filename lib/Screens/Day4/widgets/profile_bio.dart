@@ -31,7 +31,7 @@ class ProfileBio extends StatelessWidget {
               height: 40,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                color: const Color(0xFFD3C7C7),
+                color: AppColors.inboxbox,
               ),
               child: Image.asset(ImageAssets.letter)),
           const SizedBox(width: 30),
@@ -40,7 +40,7 @@ class ProfileBio extends StatelessWidget {
               height: 40,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                color: const Color(0xFFFCE2B6),
+                color: AppColors.callbox,
               ),
               child: Image.asset(ImageAssets.call)),
           const SizedBox(width: 30),
@@ -49,7 +49,7 @@ class ProfileBio extends StatelessWidget {
               height: 40,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                color: const Color(0xFFACF8FF),
+                color: AppColors.twitterbox,
               ),
               child: Image.asset(ImageAssets.twitterblue)),
         ]),
