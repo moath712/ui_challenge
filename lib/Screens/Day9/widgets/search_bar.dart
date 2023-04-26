@@ -55,7 +55,12 @@ class Searchbar extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 10),
-            child: Image.asset(ImageAssets.cart2),
+            child: IconButton(
+              icon: Image.asset(ImageAssets.cart2),
+              onPressed: () {
+               
+              },
+            ),
           )
         ],
       ),

@@ -36,17 +36,21 @@ class UpperContent extends StatelessWidget {
         const SizedBox(
           height: 5,
         ),
-        const Text(
-          "Sign in",
-          style: TextStyle(
+        TextButton(
+          onPressed: () {},
+          child: const Text(
+            "Sign in",
+            style: TextStyle(
               fontSize: 18,
               color: Color(0xFF99E6FC),
               decoration: TextDecoration.underline,
               decorationColor: Color(0xFF99E6FC),
-              fontWeight: FontWeight.w500),
+              fontWeight: FontWeight.w500,
+            ),
+          ),
         ),
         const SizedBox(
-          height: 60,
+          height: 40,
         ),
       ],
     );

@@ -13,8 +13,18 @@ class TopBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Image.asset(ImageAssets.menu),
-          Image.asset(ImageAssets.search),
+          IconButton(
+            icon: Image.asset(ImageAssets.menu),
+            onPressed: () {
+              
+            },
+          ),
+          IconButton(
+            icon: Image.asset(ImageAssets.search),
+            onPressed: () {
+              
+            },
+          ),
         ],
       ),
     );

@@ -27,6 +27,14 @@ class TopGoodiesList extends StatelessWidget {
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey.withOpacity(0.5),
+                        spreadRadius: 2,
+                        blurRadius: 5,
+                        offset: const Offset(0, 3),
+                      ),
+                    ],
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   child: Column(
@@ -35,15 +43,18 @@ class TopGoodiesList extends StatelessWidget {
                         padding: const EdgeInsets.all(10.0),
                         child: Image.asset(_items2[index].imageUrl),
                       ),
-                      Text(
-                        _items2[index].name,
-                        style: GoogleFonts.openSans(
-                            fontSize: 11.0,
-                            color: AppColors.itemsblue,
-                            fontWeight: FontWeight.w700),
-                      ),
                     ],
                   ),
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  _items2[index].name,
+                  style: GoogleFonts.openSans(
+                      fontSize: 11.0,
+                      color: AppColors.itemsblue,
+                      fontWeight: FontWeight.w700),
                 ),
               ],
             ),

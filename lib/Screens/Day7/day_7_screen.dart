@@ -14,13 +14,26 @@ class Day7 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
+        mainAxisAlignment: MainAxisAlignment.start,
         children: [
           const SizedBox(
             height: 60,
           ),
           Container(
               color: Colors.white,
-              child: Center(child: Image.asset(ImageAssets.chats))),
+              child: Column(
+                children: [
+                  const SizedBox(
+                    height: 10,
+                  ),
+                  Center(
+                    child: IconButton(
+                      icon: Image.asset(ImageAssets.chats),
+                      onPressed: () {},
+                    ),
+                  ),
+                ],
+              )),
           Container(
             color: Colors.white,
             child: Row(
