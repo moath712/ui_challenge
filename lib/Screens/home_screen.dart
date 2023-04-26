@@ -18,7 +18,36 @@ class ButtonsData {
   ButtonsData({required this.name, required this.image, required this.route});
 }
 
-class HomeScreen extends StatelessWidget {
+class HomeScreen extends StatefulWidget {
+  const HomeScreen({super.key});
+
+  @override
+  State<HomeScreen> createState() => _HomeScreenState();
+}
+
+class _HomeScreenState extends State<HomeScreen> {
+  double _opacity = 1.0;
+  double _scale = 1.0;
+
+  void _onTap(int index) {
+    setState(() {
+      _opacity = 0.5;
+      _scale = 0.9;
+    });
+
+    Future.delayed(const Duration(milliseconds: 200), () {
+      setState(() {
+        _opacity = 1.0;
+        _scale = 1.0;
+      });
+
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => dataList[index].route),
+      );
+    });
+  }
+
   final List<ButtonsData> dataList = [
     ButtonsData(
       name: 'Day 1',
@@ -64,8 +93,6 @@ class HomeScreen extends StatelessWidget {
     ),
   ];
 
-  HomeScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -80,7 +107,9 @@ class HomeScreen extends StatelessWidget {
         padding: const EdgeInsets.all(10.0),
         children: List.generate(dataList.length, (index) {
           final button = dataList[index];
-          return Container(
+          return AnimatedContainer(
+            duration: const Duration(milliseconds: 200),
+            curve: Curves.easeInOut,
             decoration: BoxDecoration(boxShadow: [
               BoxShadow(
                 color: Colors.grey.withOpacity(0.5),
@@ -89,25 +118,23 @@ class HomeScreen extends StatelessWidget {
                 offset: const Offset(0, 3),
               ),
             ], color: Colors.black, borderRadius: BorderRadius.circular(5)),
+            transform: Matrix4.diagonal3Values(_scale, _scale, 1),
             child: GestureDetector(
-              onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => button.route,
-                  ),
-                );
-              },
+              onTap: () => _onTap(index),
               child: Card(
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
-                      button.name,
-                      style: GoogleFonts.openSans(
-                        fontSize: 20,
-                        fontWeight: FontWeight.w800,
-                        color: Colors.black,
+                    AnimatedOpacity(
+                      duration: const Duration(milliseconds: 200),
+                      opacity: _opacity,
+                      child: Text(
+                        button.name,
+                        style: GoogleFonts.openSans(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w800,
+                          color: Colors.black,
+                        ),
                       ),
                     ),
                   ],
