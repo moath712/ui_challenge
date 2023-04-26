@@ -58,7 +58,7 @@ class _SwipePageViewState extends State<SwipePageView> {
         body: Stack(children: <Widget>[
           _currentimageColor,
           GetStartedButton(currentButtonColor: _currentButtonColor),
-          PagesViews(),
+          pagesViews(),
           Positioned(
             left: 0,
             right: 0,
@@ -72,44 +72,44 @@ class _SwipePageViewState extends State<SwipePageView> {
         ]));
   }
 
-  PageView PagesViews() {
+  PageView pagesViews() {
     return PageView(
-          controller: _pageController,
-          onPageChanged: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-          children: List.generate(
-            dataList.length,
-            (index) => Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(dataList[index].image),
-                const SizedBox(height: 60),
-                Text(dataList[index].title,
-                    style: GoogleFonts.roboto(
-                        fontSize: 36.0,
-                        color: AppColors.dayone,
-                        fontWeight: FontWeight.w700)),
-                const SizedBox(height: 20),
-                Center(
-                  child: Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Text(
-                      dataList[index].texts,
-                      softWrap: true,
-                      textAlign: TextAlign.center,
-                      style: const TextStyle(
-                          fontSize: 18.0,
-                          color: AppColors.dayone,
-                          fontWeight: FontWeight.w400),
-                    ),
-                  ),
+      controller: _pageController,
+      onPageChanged: (index) {
+        setState(() {
+          _currentIndex = index;
+        });
+      },
+      children: List.generate(
+        dataList.length,
+        (index) => Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Image.asset(dataList[index].image),
+            const SizedBox(height: 60),
+            Text(dataList[index].title,
+                style: GoogleFonts.roboto(
+                    fontSize: 36.0,
+                    color: AppColors.dayone,
+                    fontWeight: FontWeight.w700)),
+            const SizedBox(height: 20),
+            Center(
+              child: Padding(
+                padding: const EdgeInsets.all(8.0),
+                child: Text(
+                  dataList[index].texts,
+                  softWrap: true,
+                  textAlign: TextAlign.center,
+                  style: const TextStyle(
+                      fontSize: 18.0,
+                      color: AppColors.dayone,
+                      fontWeight: FontWeight.w400),
                 ),
-              ],
+              ),
             ),
-          ),
-        );
+          ],
+        ),
+      ),
+    );
   }
 }
