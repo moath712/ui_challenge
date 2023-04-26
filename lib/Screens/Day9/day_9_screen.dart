@@ -6,7 +6,8 @@ import 'package:ui_challenge/screens/Day9/widgets/search_bar.dart';
 import 'package:ui_challenge/screens/Day9/widgets/title_seeall.dart';
 import 'package:ui_challenge/screens/Day9/widgets/title_seeall2.dart';
 import 'package:ui_challenge/screens/Day9/widgets/top_goodies.dart';
-import 'package:ui_challenge/screens/Day9/widgets/top_image.dart';
+
+import 'package:ui_challenge/style/assets_manager.dart';
 
 class Day9 extends StatefulWidget {
   const Day9({super.key});
@@ -29,7 +30,7 @@ class _Day9State extends State<Day9> {
           children: [
             const SizedBox(height: 50),
             Searchbar(searchController: _searchController),
-            const Topimage(),
+            Image.asset(ImageAssets.iceCups),
             const TitleWithSeeAll(),
             DeliciousDopamineList(items: _items),
             const SizedBox(

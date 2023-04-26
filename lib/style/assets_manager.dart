@@ -89,6 +89,7 @@ class ImageAssets {
   static const String learn = "assets/images/learn.png";
   static const String code = "assets/images/code.png";
   static const String collect = "assets/images/collect.png";
+  static const String iceCups = "assets/images/iceCups.png";
 }
 
 class SvgAssets {}
